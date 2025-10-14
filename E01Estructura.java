@@ -12,8 +12,12 @@ Tema: Programa que me permite practicar la estructura
 //librerias 
 //declaracion  de variables, ctes, funciones
 public class E01Estructura{
-//programa principal
+  //variables globales
 
+
+  
+//programa principal 
+  //metodo
     public static void main(String [] args){
         System.out.printf("Hello Michael");
 
