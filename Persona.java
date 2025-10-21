@@ -11,86 +11,27 @@ import java.util.Scanner;
 
 public class Persona {
     //Atributros Variables globales
-    private String nombre; 
-    //toUpperCase para MAYUSCULAS y toLowerCase para minusculas 
-    private byte edad;
-    private String sexo;
-     private String mensaje;
+    //toUpperCase para MAYUSCULAS y toLowerCase para minusculas
+    String nombre; 
+    byte edad;
+    String sexo;
+    String mensaje;
     
 
     //Metodos:
      //Metodo llamado constructor vacio o por defecto
      //metodo1
-    public Persona( String nombre, byte edad, String sexo, String mensaje) {
-        
-        this.edad = edad;
-        this.sexo = "masculino";
-        this.mensaje = "otro";
+    public Persona(){
+    
     }
     
-    public Persona(String nombre){
-        this.mensaje= " tu nombre ";
-    }
-   
-    
-    //metodo3 - metodo del usuario 
-    public  void imprimirSaludo(){
-        System.out.println(" Hola , me llamo "+getNombre());
+    public void imprimirSaludo(){
+        System.out.println("Hola, soy una persona me llamo: "+nombre);
     }
     
-    //get and set 
+    //get and set  
+    //los get and set sirven para encapsular los atributos
 
-    public String getNombre() {
-        return nombre;
-    }
-    
-    public void setNombre(String nombre){
-        this.nombre=nombre;
-    }
-
-    /**
-     * @return the edad
-     */
-    public byte getEdad() {
-        return edad;
-    }
-
-    /**
-     * @param edad the edad to set
-     */
-    public void setEdad(byte edad) {
-        this.edad = edad;
-    }
-
-    /**
-     * @return the sexo
-     */
-    public String getSexo() {
-        return sexo;
-    }
-
-    /**
-     * @param sexo the sexo to set
-     */
-    public void setSexo(String sexo) {
-        this.sexo = sexo;
-    }
-
-    /**
-     * @return the mensaje
-     */
-    public String getMensaje() {
-        return mensaje;
-    }
-
-    /**
-     * @param mensaje the mensaje to set
-     */
-    public void setMensaje(String mensaje) {
-        this.mensaje = mensaje;
-    }
-    
-    
 
    
     

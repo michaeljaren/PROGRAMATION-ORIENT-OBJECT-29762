@@ -1,34 +1,34 @@
-/* UNIVERSIDAD DE LAS FUERZAS ARMADAS ESPE
-  SOFTWARE 
-  NOMBRE: MICHAEL BARRAGAN        PERIODO: PREGRADO
-  Asignatura: POO                     NRC:29762
-  Fecha: 16/10/2025
-  Tema: La clase Principal
-*/ 
-package e05Persona;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package e06Vehiculo;
 
 import java.util.Scanner;
 
-public class Principal{
-    public static void main(String [] args ){
-        //nombre de la clase + nombre del objeto = new nombre del metodo (); 
-        Persona objeto1 = new Persona("Michael", (byte)60,"masculino", "tu msj");
+/**
+ *
+ * @author LABS-ESPE
+ */
+public class Principal {
+    public static void main(String[] args) {
+        // Objeto1 
+        Vehiculo vehiculo = new Vehiculo();
+        //creamos el objeto Scanner para leer datos
+        Scanner scanner = new Scanner (System.in);
+        System.out.println(" ");
+        System.out.println(vehiculo.mostrarDatos());
+        vehiculo.ingresarDato();
+        System.out.println(" ");
+        System.out.println(vehiculo.mostrarDatos());
+        System.out.println(" ");
+        System.out.println("\nCambie la marca: ");
         
-        Persona objeto2 = new Persona ("michael");
-        
-        Persona objeto3 = new Persona("Tu");
-        
-        System.out.println("nombre:" +objeto2.getEdad());
-        System.out.println("nombre: "+objeto2.getNombre());
-        System.out.println("nombre: "+objeto1.getMensaje());
-        objeto1.imprimirSaludo();
-        
-        
-        
-        
-        
+        //leer dato
+        vehiculo.setMarca(scanner.nextLine());
+        System.out.println(vehiculo.mostrarDatos());
+        System.out.println(vehiculo.toString());
     }
     
-
+    
 }
-
